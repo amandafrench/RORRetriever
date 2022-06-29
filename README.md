@@ -1,5 +1,5 @@
 # ROR Retriever
-The [Research Organizatiopn Registry](https://ror.org) provides access to a growing collection of unique and persistent identifiers (RORs) for research organizations and a [web interface](https://ror.org) and [API](https://ror.readme.io/docs/rest-api) for searching the collection with an organization name or a affiliation string. The web interface and API work well if you have a small number of affiliation strings that need identifiers, but what if you have several hundred organization names or thousands of affiliation strings? This is the daunting problem that repositories face when they are trying to populate their existing records with identifiers. ROR Retriever is a tool developed to help address these repositories and others that are ready to add identifiers to large collections with many affiliations.
+The [Research Organization Registry](https://ror.org) provides access to a growing collection of unique and persistent identifiers (RORs) for research organizations and a [web interface](https://ror.org) and [API](https://ror.readme.io/docs/rest-api) for searching the collection with an organization name or a affiliation string. The web interface and API work well if you have a small number of affiliation strings that need identifiers, but what if you have several hundred organization names or thousands of affiliation strings? This is the daunting problem that repositories face when they are trying to populate their existing records with identifiers. ROR Retriever is a tool developed to help address these repositories and others that are ready to add identifiers to large collections with many affiliations.
 
 # Usage
 **Use python RORRetriever.py -h to see this usage description.**
@@ -29,7 +29,7 @@ optional arguments:
 ```
 
 # Environment
-ROR Reteriever imports the following python modules: requests, json, pandas, urllib.parse, sys, datetime, argparse, datetime, logging, os, re. The file RORRetriever.yml can be used to create the environment using the command **conda env create -f RORRetriever.yml**
+ROR Retriever imports the following python modules: requests, json, pandas, urllib.parse, sys, datetime, argparse, datetime, logging, os, re. The file RORRetriever.yml can be used to create the environment using the command **conda env create -f RORRetriever.yml**
 
 # Outputs - ROR Search Results
 The results of the search are provided in a tab-delimited file called **AffiliationAPI\_RORData\_\_TIMESTAMP.tsv**. This file has at least one row for every input affiliation but can have more if more than one ROR is identified for a single affiliation. In many cases when multiple RORs are found, some are incorrect and curation is required to select the correct one.
